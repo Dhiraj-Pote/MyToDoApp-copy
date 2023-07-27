@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.7.1",
+    "@emotion/react": "^11.8.1",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -19,6 +19,7 @@
     "react-scripts": "^5.0.1",
     "typescript": "^3.9.10",
     "uuid": "^7.0.3",
+    "workbox": "^0.0.0",
     "wouter": "^2.7.0"
   },
   "scripts": {
