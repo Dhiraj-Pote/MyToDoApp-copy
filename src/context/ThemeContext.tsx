@@ -10,7 +10,7 @@ interface Props {
 }
 
 interface ThemeInterface {
-  isDark: boolean;
+  isDark: false;
   changeTheme: () => void;
 }
 

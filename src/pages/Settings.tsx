@@ -17,7 +17,7 @@ const Settings = () => {
     <>
       <Container>
         <h3>
-          Dark Mode:
+          Light Mode:
           <Switch onChange={changeTheme} checked={isDark} color="primary" />
         </h3>
         <h3>
