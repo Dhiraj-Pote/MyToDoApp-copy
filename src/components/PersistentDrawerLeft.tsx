@@ -185,7 +185,7 @@ export default function PersistentDrawerLeft(props: any) {
                       noWrap
                       style={{ flexGrow: 1, cursor: "pointer" }}
                     >
-                      My Todo App
+                      My Todo App 2
                     </Typography>
                   </Link>
                 )}
