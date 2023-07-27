@@ -175,7 +175,7 @@ export default function PersistentDrawerLeft(props: any) {
                     style={{ flexGrow: 1, cursor: "pointer" }}
                   >
                     {location === "/"
-                      ? "MAX TODOS"
+                      ? "My ToDo App"
                       : location.toUpperCase().replace("/", "")}
                   </Typography>
                 ) : (
