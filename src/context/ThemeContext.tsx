@@ -10,7 +10,7 @@ interface Props {
 }
 
 interface ThemeInterface {
-  isDark: false;
+  isDark: boolean;
   changeTheme: () => void;
 }
 
@@ -18,21 +18,21 @@ export const ThemeContext = createContext<ThemeInterface | null>(null);
 
 export const ThemeProvider = ({ children }: Props) => {
   const [isDark, setIsDark] = useState(
-    JSON.parse(localStorage.getItem("darkTheme")!) || false
+    JSON.parse(localStorage.getItem("darkTheme")!) || true // Set dark mode as the default theme
   );
 
   const changeTheme = () => {
     setIsDark(!isDark);
     if (isDark) {
+      disableDarkMode(); // Disable dark mode when theme is currently dark
+    } else {
       enableDarkMode({
         brightness: 100,
         contrast: 90,
         sepia: 10,
-      });
-    } else {
-      disableDarkMode();
+      }); // Enable dark mode when theme is currently light
     }
-    localStorage.setItem("darkTheme", String(isDark));
+    localStorage.setItem("darkTheme", String(!isDark)); // Save the opposite value in localStorage
   };
 
   useEffect(() => {
