@@ -13,7 +13,7 @@ const About = () => {
       <Container>
         <p style={{ fontSize: "1.3rem" }}>
           <b>This is Raina's Personal website</b> a small gift made by Dhiraj with lot's of love.
-          So Raina write your todos,change some settings, Enjoy! <br/>
+          So dear Raina, write your todos,change some settings, Enjoy! <br/>
           Date: 06/08/23
         </p>
         <h2>Contact</h2>
