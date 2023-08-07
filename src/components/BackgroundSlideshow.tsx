@@ -12,7 +12,7 @@ const BackgroundSlideshow: React.FC<BackgroundSlideshowProps> = ({ images }) => 
     const intervalId = setInterval(() => {
       // Increment the currentImageIndex to change the background image
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // 10 seconds interval
+    }, 5000); // 10 seconds interval
 
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, [images]);

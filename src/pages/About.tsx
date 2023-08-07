@@ -12,8 +12,8 @@ const About = () => {
     <>
       <Container>
         <p style={{ fontSize: "1.3rem" }}>
-          <b>My Todo App</b> is a project by Dhiraj using React, MUI.
-          This app focuses on the ease of use of a Todo App. Write your todos,
+          <b>This is Raina's Personal Todo App</b> gifted by Shristi with love. 
+          So, dear Raina Write your todos, complete the tasks,
           change some settings, Enjoy!
         </p>
         <h2>Contact</h2>

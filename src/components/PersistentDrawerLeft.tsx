@@ -127,6 +127,7 @@ export default function PersistentDrawerLeft(props: any) {
     setOpen(false);
   };
 
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -175,7 +176,7 @@ export default function PersistentDrawerLeft(props: any) {
                     style={{ flexGrow: 1, cursor: "pointer" }}
                   >
                     {location === "/"
-                      ? "My ToDo App"
+                      ? "Raina's ToDo App"
                       : location.toUpperCase().replace("/", "")}
                   </Typography>
                 ) : (
@@ -270,6 +271,7 @@ export default function PersistentDrawerLeft(props: any) {
         })}
       >
         <div className={classes.drawerHeader} />
+
       </main>
     </div>
   );
